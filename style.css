@@ -7,14 +7,44 @@
 body{
     font-family: Lato;
 }
+.btn-primary {
+    border-radius: 8px;
+    border: none;
+    background: #E55473;
+    cursor: pointer;
+    /* display: inline-flex; */
+    padding: 15px 30px;
+    align-items: flex-start;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+}
+.title{
+    margin: 20px;
+    text-align: center ;
+    font-size: 30px;
+    color: #272727;
+    font-weight: 800;
+}
+.subtitle{
+    text-align: center;
+    color: rgba(39, 39, 39, 0.60);
+    font-size: 15px;
+    font-weight: 400;
+    margin: 20px;
+    /* margin-bottom: 10px; */
+}
+
+
 /* Header section styling */
-header{
+header,.offer-section{
     display: flex;
     justify-content: space-around;
     align-items: center;
     background: rgba(229, 84, 115, 0.10);
 }
-.header-left{
+.header-left,.offer-left{
    margin: 50px auto;
    padding-left:  150px;
 
@@ -51,43 +81,31 @@ header{
 }
 
 
-.btn-primary {
-    border-radius: 8px;
-    border: none;
-    background: #E55473;
-    cursor: pointer;
-    display: inline-flex;
-    padding: 15px 30px;
-    align-items: flex-start;
-    gap: 10px;
-    font-weight: 700;
-    font-size: 16px;
-    color: white;
-}
 
 /* subscribe section styling */
 .subscribe-section{
+    background: url("Flower Asset/Rectangle 9.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     border-radius: 8px;
-    /* width: 1440px; */
-    height: 449px;
-    text-align: center;
-    margin: 100px 100px;
-    background: url("Flower Asset/Rectangle 9.png"), lightgray 0px -203.444px / 100% 213.755% no-repeat;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 404px;
+    width: 84%;
+    margin:100px auto;
+  }
+  
+  .centered-content {
+    display: inline-block;
+  }
+  
 
-}
-.subscribe-section-title{
-    color: #272727;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 800;
-
-}
 .coupon-text{
     color: rgba(39, 39, 39, 0.60);
     text-align: center;
     font-size: 16px;
-
-
 }
 #emailbox{
     border-radius: 8px;
@@ -97,9 +115,112 @@ header{
     border: none;
     padding: 22px;
     margin: 16px;
+}
+
+
+/* offer-section styling */
+.offer-section{
+    border-radius: 8px;
+    height: 520px;
+    border-radius: 8px;
+    background: rgba(229, 84, 115, 0.05);
+}
+.offer-section-title{
+    color: #272727;
+    font-size: 30px;
+    font-weight: 800;
 
 }
-.sub-btn{}
+.offer-section-title>span{
+color: #E55473;
+}
+
+.offer-img{
+    width: 240px;
+    height: 320px;
+}
+.ofg{
+    text-align: center;
+}
+.offerbtn{
+    margin: 10px auto;
+    border: none;
+    cursor: pointer;
+    padding: 15px 30px;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    border-radius: 8px;
+    background: #E55473;
+  
+    
+}
+.center{
+    text-align: center;
+}
+.offer-right{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-right: 150px;
+}
+
+/* instagram section syling */
+.instagram{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+.insta-image-container, .feature-image-container{
+    display: flex;   
+    justify-content: center;
+}
+.insta-image-container > img{
+    width: 242px;
+    height: 296px;
+    margin: 20px;
+
+}
+
+
+/* Feature Flower  */
+.feature-section{
+    margin: 100px;
+}
+.feature-section img{
+    width: 242px;
+    height: 296px;
+    margin: 15px;
+    padding: 24px;
+    border-radius: 300px 300px 0px 0px;
+}
+.ff1{   
+    background: rgba(167, 33, 98, 0.15);
+}
+.ff2{
+    background: rgba(5, 151, 160, 0.15);
+}
+.ff3{
+    background: rgba(71, 125, 17, 0.15);
+}
+.feature-title{
+
+}
+.flower-n-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 200px;   
+}
+.flpwer-name{
+    color: #272727;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration-line: underline;
+    padding: 20px;
+   
+}
+
 
 /* Footer section styling */
 footer{
